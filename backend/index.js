@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
 
 
 app.listen(4000,()=>{
-    console.log("levante el server"+ 4000)
+    console.log("levante el server "+ 4000)
  
 })
 
