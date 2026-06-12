@@ -1,15 +1,20 @@
-const express = require('express')
+const express = require('express');
+const cors = require('cors');
 
-const app = express()
+const rutasProyecto = require('./routes/router'); 
 
-app.get('/productos', (req, res) => {
-
-})
-
-
-
-app.listen(4000,()=>{
-    console.log("levante el server "+ 4000)
-})
+const app = express();
+const PORT = 4000; 
 
 
+app.use(cors());         
+app.use(express.json());  
+
+
+app.use('/api', rutasProyecto); 
+
+
+app.listen(PORT, () => {
+    console.log(`[Servidor] Corriendo con éxito en el puerto ${PORT}`);
+    console.log(`[API] Endpoint de productos listo en: http://localhost:${PORT}/api/productos`);
+});

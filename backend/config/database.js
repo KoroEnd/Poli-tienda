@@ -2,10 +2,10 @@ const sqlServer = require('mssql')
 
 //los datos de conexion
 const dbConfig = {
-    user : 'adminTienda',
-    password: '1234*poli*',
+    user : 'Admin_Expo_Star',
+    password: 'Leinaldo23r',
     server: 'localhost',
-    database: 'politienda',
+    database: 'Expo_Star',
     options: {
         encrypt: false,
         trustServerCertificate: true
