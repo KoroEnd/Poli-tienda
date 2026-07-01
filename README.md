@@ -14,6 +14,14 @@ Inicializar repositorio con node
 `npm init -y` crea un 
 package.json generico  
 
+Ejecutar el backend:
+
+`cd backend && npm install && npm start`
+
+Abrir la tienda en el navegador:
+
+`http://localhost:4000`
+
 
 │   .gitignore
 │   README.md
