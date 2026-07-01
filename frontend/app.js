@@ -384,3 +384,12 @@ function verDetalle(id, encodedName, precio, rutaImagen) {
     `;
     modal.style.display = 'flex';
 }
+
+
+
+
+
+
+
+
+
