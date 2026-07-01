@@ -12,16 +12,14 @@ const dbConfig = {
     }
 }
 
-const conexion = async ()=> {
-
+const conexion = async () => {
     try {
-        //que es lo que tiene que intentar ejecutar
-        const pool = await sqlServer.connect(dbConfig)
-        return pool
+        const pool = await sqlServer.connect(dbConfig);
+        return pool;
     } catch (error) {
-        console.error('error en la conexion: ',error)
+        console.error('Error en la conexión a la base de datos:', error);
+        throw error;
     }
-    
-}
+};
 
-module.exports = conexion
+module.exports = conexion;
